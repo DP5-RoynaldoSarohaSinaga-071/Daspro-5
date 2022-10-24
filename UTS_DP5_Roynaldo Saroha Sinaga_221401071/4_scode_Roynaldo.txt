@@ -1,0 +1,36 @@
+uses crt;
+
+var
+        n, i, j, k : integer;
+
+begin
+        clrscr;
+        write ('Nilai = ');
+        readln (n);
+
+        for i := n downto 1 do
+        begin
+                for j := i downto 1 do
+                begin
+                write (' ');
+                end;
+                for k := i to n do
+                begin
+                write ('* ');
+                end;
+                writeln;
+        end;
+        for i := 1 to n do
+        begin
+                for j := 1 to i + 1 do
+                begin
+                write (' ');
+                end;
+                for k := n - 1 downto i do
+                begin
+                write ('* ');
+                end;
+                writeln;
+        end;
+        readln;
+end.

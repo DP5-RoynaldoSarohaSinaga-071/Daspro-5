@@ -1,0 +1,15 @@
+uses crt;
+
+var
+        j : integer;
+
+begin
+        clrscr;
+        j := 1;
+        while (j <= 5) do
+        begin
+        write (j, ' ');
+        j := j + 1;
+        end;
+        readln;
+end.

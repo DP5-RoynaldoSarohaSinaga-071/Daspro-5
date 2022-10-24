@@ -1,0 +1,23 @@
+uses crt;
+
+var
+        awal, akhir : string;
+        suhu : integer;
+        reamur, kelvin, fah : real;
+
+begin
+        clrscr;
+        write ('Masukkan nama awal                      : ');
+        readln (awal);
+        write ('Masukkan nama akhir                     : ');
+        readln (akhir);
+        write ('Masukkan suhu hari ini dalam celcius    : ');
+        readln (suhu);
+
+        reamur := 4 / 5 * suhu;
+        kelvin := suhu + 273;
+        fah := 9 / 5 * suhu + 32;
+
+        write ('Halo ', awal, ' ', akhir, ', hari ini bersuhu ', reamur:0:2, ' *R / ', kelvin:0:2, ' K / ', fah:0:2, ' *F');
+        readln;
+end.
